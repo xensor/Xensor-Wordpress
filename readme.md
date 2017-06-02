@@ -1,8 +1,6 @@
 # Xensor's Features #
 Contributors: Xensor, ChuChuYokai
 
-Version: 1.0.2
-
 Donate link: http://www.leroymcqy.cf
 
 Tags: membership 2 pro, membership, maintenance, ban, Minecraft, Rules
@@ -35,19 +33,19 @@ This section describes how to install the plugin and get it working.
 
 1. Upload `Xensor` to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Go to Dashboard -> Settings -> xensor and pick which section you wish.
+1. Go to `Dashboard -> Settings -> xensor` and pick which section you wish.
 
 ## Frequently Asked Questions ##
 
-What does this do? 
+*What does this do?*
 
 This allows admin(s) to set up ban pages and maintenance pages and then set the `page id` into the fields to be redirected to. This isn't just a redirect on login, it actually redirects them during the whole visit. 
 
-What is required?
+*What is required?*
 
 Membership 2 from WMPUDEV. (I have not tested it with the free version.)
 
-Settings
+*Settings*
 
 To set up the options for the plugin, you would head over to `Dashboard -> Xensor -> Xensor`. From here you will see a form that gives you options to change the ids of the following: `ban, guest and default`, you will also see redirect URLs for `maintenance` and `banned`. You can also change the pages that are for the member(s) to be redirected to `ban page id` and `maintenance page id`.
 
@@ -62,6 +60,7 @@ I am gonna show you how to get it from a shortcode:
 on the membership 2 page, you will see a column with 'shortcode', you click the show link to get the shortcode. `[ms-protect-content id="29578"][/ms-protect-content]` this is the shortcode you will be looking for. 
 
 *What Shortcode is used to show the rules?*
+
 You use `[showrules]` in any content that allows shortcodes and it will work. 
 
 
