@@ -1,6 +1,8 @@
 # Xensor's Features #
 Contributors: Xensor, ChuChuYokai
 
+version: 1.0.0
+
 Donate link: http://www.leroymcqy.cf
 
 Tags: membership 2 pro, membership, maintenance, ban, Minecraft, Rules
@@ -71,17 +73,16 @@ You use `[showrules]` in any content that allows shortcodes and it will work.
 ![Banned Page](http://www.pixelmonmemories.ml/wp-content/uploads/2017/06/banned.png 'Banned Page')
 
 ![maintenance admin panel](https://box.everhelper.me/attachment/944331/ad10e51d-6828-4832-bf72-e493003daaeb/817279-SFErt1hKuMQDNbC5/screen.png 'maintenance admin panel')
+
 ## Changelog ##
-# 1.0.2 #
-1. Redid the maintenance and Minecraft Verification.
-2. Added Rules.
-3. Added shortcodes for rules.
 
-# 1.0.1 #
-1. Fixed labels on the admin panel from `staff` to `Default` and `gym leader` to `Guest id`.
-1. Added the ability to uninstall the plugin.
+# 1.0.0 #
 
-# 1.0 #
+* Redid the maintenance and Minecraft Verification.
+* Added Rules.
+* Added shortcodes for rules.
+* Fixed labels on the admin panel from `staff` to `Default` and `gym leader` to `Guest id`.
+* Added the ability to uninstall the plugin.
 * Initial start of the plugin path.
 * Set up the code to allow admins to edit details for the plugin
 * Set up redirects to kick ban members to a set page and also redirect non-staff to a maintenance page when maintenance is enabled.
@@ -89,12 +90,13 @@ You use `[showrules]` in any content that allows shortcodes and it will work.
 
 ## Upgrade Notice ##
 
-# 1.0.2 #
-New features which is only available at version 1.0.2. Rules are added and shortcode to show rules on pages/posts. You also get a new menu with all features under one section.
+# 1.0.0 #
 
-# 1.0.1 #
+You can still use the other plugins I created, but this is with both the maintenance and minecraft included. This isa multi-plugin that I created for my community to make it easier to find the item.
+
+New features which is only available at version 1.0.0. Rules are added and shortcode to show rules on pages/posts. You also get a new menu with all features under one section.
+
 This will show the proper labels so you know which membership is needed to show the maintenance pages too. If you fail to update the plugin, you acknowledge that you are using an outdated plugin that does not show the proper labels.
 
-# 1.0 #
 Beta, Should not be used on a live site. This plugin has been created. We will post updates when we update the plugin.
 
