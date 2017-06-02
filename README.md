@@ -1,6 +1,8 @@
 # Xensor's Features #
 Contributors: Xensor, ChuChuYokai
 
+Version: 1.0.2
+
 Donate link: http://www.leroymcqy.cf
 
 Tags: membership 2 pro, membership, maintenance, ban, Minecraft, Rules
@@ -47,9 +49,9 @@ Membership 2 from WMPUDEV. (I have not tested it with the free version.)
 
 Settings
 
-To set up the options for the plugin, you would head over to `Dashboard -> Settings -> Maintenance`. From here you will see a form that gives you options to change the ids of the following: `ban, guest and default`, you will also see redirect URLs for `maintenance` and `banned`. You can also change the pages that are for the member(s) to be redirected to `ban page id` and `maintenance page id`.
+To set up the options for the plugin, you would head over to `Dashboard -> Xensor -> Xensor`. From here you will see a form that gives you options to change the ids of the following: `ban, guest and default`, you will also see redirect URLs for `maintenance` and `banned`. You can also change the pages that are for the member(s) to be redirected to `ban page id` and `maintenance page id`.
 
-The maintenance and ban page id are the ids you get from editing the post. Example: wp-admin/post.php?post=`29749`&action=edit.
+The maintenance and ban page id are the ids you get from editing the post. Example: `wp-admin/post.php?post=`29749`&action=edit.`
 
 That id after `post=` is the number you need for the page id. 
 
@@ -59,6 +61,8 @@ I am gonna show you how to get it from a shortcode:
 
 on the membership 2 page, you will see a column with 'shortcode', you click the show link to get the shortcode. `[ms-protect-content id="29578"][/ms-protect-content]` this is the shortcode you will be looking for. 
 
+*What Shortcode is used to show the rules?*
+You use `[showrules]` in any content that allows shortcodes and it will work. 
 
 
 ## Screenshots ##
@@ -69,6 +73,10 @@ on the membership 2 page, you will see a column with 'shortcode', you click the 
 
 ![maintenance admin panel](https://box.everhelper.me/attachment/944331/ad10e51d-6828-4832-bf72-e493003daaeb/817279-SFErt1hKuMQDNbC5/screen.png 'maintenance admin panel')
 ## Changelog ##
+# 1.0.2#
+1. Redid the maintenance and Minecraft Verification.
+2. Added Rules.
+3. Added shortcodes for rules.
 
 # 1.0.1 #
 1. Fixed labels on the admin panel from `staff` to `Default` and `gym leader` to `Guest id`.
@@ -81,6 +89,9 @@ on the membership 2 page, you will see a column with 'shortcode', you click the 
 
 
 ## Upgrade Notice ##
+
+# 1.0.2 #
+New features which is only available at version 1.0.2. Rules are added and shortcode to show rules on pages/posts. You also get a new menu with all features under one section.
 
 # 1.0.1 #
 This will show the proper labels so you know which membership is needed to show the maintenance pages too. If you fail to update the plugin, you acknowledge that you are using an outdated plugin that does not show the proper labels.
