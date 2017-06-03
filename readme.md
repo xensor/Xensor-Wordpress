@@ -1,7 +1,7 @@
 # Xensor's Features #
 Contributors: Xensor, ChuChuYokai
 
-version: 1.0.0
+version: 1.0.1
 
 Donate link: http://www.leroymcqy.cf
 
@@ -76,6 +76,12 @@ You use `[showrules]` in any content that allows shortcodes and it will work.
 
 ## Changelog ##
 
+# 1.0.1 #
+
+* cleaned up the code
+* Added the ability to edit rules.
+* Made Editors have access to the admin panel.
+
 # 1.0.0 #
 
 * Redid the maintenance and Minecraft Verification.
@@ -89,6 +95,9 @@ You use `[showrules]` in any content that allows shortcodes and it will work.
 
 
 ## Upgrade Notice ##
+
+# 1.0.1 #
+Updated the coding and as well as added the editing rules section. Thus, allowing staff members to be able to modify the rules.
 
 # 1.0.0 #
 
