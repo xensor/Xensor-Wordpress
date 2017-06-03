@@ -11,7 +11,7 @@ Requires at least: 4.7.5
 
 Tested up to 4.7.5
 
-Stable tag: 4.7.5
+Stable tag: 1.0.1
 
 License: GPLv2 or later
 
@@ -75,6 +75,10 @@ You use `[showrules]` in any content that allows shortcodes and it will work.
 ![maintenance admin panel](https://box.everhelper.me/attachment/944331/ad10e51d-6828-4832-bf72-e493003daaeb/817279-SFErt1hKuMQDNbC5/screen.png 'maintenance admin panel')
 
 ## Changelog ##
+
+# 1.0.2 #
+
+**Coming Soon**
 
 # 1.0.1 #
 
