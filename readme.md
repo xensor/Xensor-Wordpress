@@ -1,4 +1,10 @@
 # Xensor's Features #
+
+[![Build Status](https://travis-ci.org/xensor/Xensor-Wordpress.svg?branch=master)](https://travis-ci.org/xensor/Xensor-Wordpress)
+
+----
+
+
 Contributors: Xensor, ChuChuYokai
 
 version: 1.0.1
