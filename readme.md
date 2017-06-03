@@ -7,7 +7,7 @@
 
 Contributors: Xensor, ChuChuYokai
 
-version: 1.0.1
+version: 1.0.2
 
 Donate link: http://www.leroymcqy.cf
 
@@ -17,7 +17,7 @@ Requires at least: 4.7.5
 
 Tested up to 4.7.5
 
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 
 License: GPLv2 or later
 
@@ -84,7 +84,9 @@ You use `[showrules]` in any content that allows shortcodes and it will work.
 
 # 1.0.2 #
 
-**Coming Soon**
+* Updated the fields to be more secured. 
+* Modified some codes to make it more friendlier with speed. 
+
 
 # 1.0.1 #
 
@@ -105,6 +107,10 @@ You use `[showrules]` in any content that allows shortcodes and it will work.
 
 
 ## Upgrade Notice ##
+
+# 1.0.2 #
+
+Updated the security of the script to ensure that no data is hackable. 
 
 # 1.0.1 #
 Updated the coding and as well as added the editing rules section. Thus, allowing staff members to be able to modify the rules.
