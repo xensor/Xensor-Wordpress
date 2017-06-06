@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/xensor/Xensor-Wordpress.svg?branch=master)](https://travis-ci.org/xensor/Xensor-Wordpress)
 
+
+![Xensor Community](http://www.pixelmonmemories.ml/wp-content/uploads/2017/06/xcommunity.png)
 ----
 
 
