@@ -76,13 +76,18 @@ You use `[showrules]` in any content that allows shortcodes and it will work.
 
 ## Screenshots ##
 
-![Maintenance Page](http://www.pixelmonmemories.ml/wp-content/uploads/2017/06/maint.png 'Maintenance Page')
+[Maintenance Page](http://www.pixelmonmemories.ml/wp-content/uploads/2017/06/maint.png 'Maintenance Page')
 
-![Banned Page](http://www.pixelmonmemories.ml/wp-content/uploads/2017/06/banned.png 'Banned Page')
+[Banned Page](http://www.pixelmonmemories.ml/wp-content/uploads/2017/06/banned.png 'Banned Page')
 
-![maintenance admin panel](https://box.everhelper.me/attachment/944331/ad10e51d-6828-4832-bf72-e493003daaeb/817279-SFErt1hKuMQDNbC5/screen.png 'maintenance admin panel')
+[maintenance admin panel](https://box.everhelper.me/attachment/944331/ad10e51d-6828-4832-bf72-e493003daaeb/817279-SFErt1hKuMQDNbC5/screen.png 'maintenance admin panel')
 
 ## Changelog ##
+
+# 1.0.3 #
+
+* Added the ability to check Minecraft username's at the dashboard. 
+* Cleaned up the code to make it even more cleaner and secured.
 
 # 1.0.2 #
 
@@ -109,6 +114,10 @@ You use `[showrules]` in any content that allows shortcodes and it will work.
 
 
 ## Upgrade Notice ##
+
+# 1.0.3 #
+
+Adds the ability to search Minecraft usernames through the dashboard.
 
 # 1.0.2 #
 
