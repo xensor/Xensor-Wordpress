@@ -6,7 +6,7 @@ if($_POST['oscimp_hidden'] == 'Y')
 else
 {
 	global $wpdb;
-	$maint = $wpdb->get_results( 'SELECT * FROM wprh_maint WHERE maint_id = 1', OBJECT );
+	$maint = $wpdb->get_results( 'SELECT * FROM '.$wpdb->prefix.'maint WHERE maint_id = 1', OBJECT );
 	//Normal page display
 	$bid        = $maint[0]->bid;
 	$sid        = $maint[0]->sid;
@@ -16,6 +16,7 @@ else
 	$maints     = $maint[0]->maint;
 	$ban_page   = $maint[0]->ban_page;
 	$maint_page = $maint[0]->maint_page;
+	$login_page = $maint[0]->login_page;
 	?>
 	<div class='wrap'>
 		<p>
@@ -29,7 +30,7 @@ else
 					<label>
 						Banned Group:
 					</label>
-					<input type="text" class="form-control input-sm" name="ban_id" value="<?php echo $bid;?>">
+					<input type="text" name="ban_id" value="<?php echo $bid;?>">
 				</p>
 				<p>
 					<label>
@@ -68,6 +69,12 @@ else
 						Maintenance Page ID:
 					</label>
 					<input type="text" name="maint_page" value="<?php echo $maint_page; ?>" size="20" >
+				</p>
+				<p>
+					<label>
+						login Page ID:
+					</label>
+					<input type="text"  name="login_page" value="<?php echo $login_page; ?>" size="20">
 				</p>
 				<p>
 					<label>

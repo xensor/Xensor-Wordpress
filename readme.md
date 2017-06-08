@@ -9,7 +9,7 @@
 
 Contributors: Xensor, ChuChuYokai
 
-version: 1.0.2
+version: 1.0.4
 
 Donate link: http://www.leroymcqy.cf
 
@@ -84,6 +84,9 @@ You use `[showrules]` in any content that allows shortcodes and it will work.
 
 ## Changelog ##
 
+# 1.0.4 #
+Added login page to be ignored from the redirect.
+
 # 1.0.3 #
 
 * Added the ability to check Minecraft username's at the dashboard. 
@@ -114,6 +117,10 @@ You use `[showrules]` in any content that allows shortcodes and it will work.
 
 
 ## Upgrade Notice ##
+
+## 1.0.4#
+
+Login does not redirect to maintenance. It now allows visitors to login.
 
 # 1.0.3 #
 

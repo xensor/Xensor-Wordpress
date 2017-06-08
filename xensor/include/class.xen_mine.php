@@ -45,6 +45,7 @@ class xen_mine
     $maint_status    = filter_input(INPUT_POST, 'maint_status');
     $banned_page     = filter_input(INPUT_POST, 'ban_page',FILTER_VALIDATE_INT);
     $maint_pages     = filter_input(INPUT_POST, 'maint_page',FILTER_VALIDATE_INT);
+     $login_pages     = filter_input(INPUT_POST, 'login_page',FILTER_VALIDATE_INT);
     global $wpdb;
     if (isset($dbhost) && isset($dbname) && isset($dbuser) && isset($dbpwd) && isset($prod_img_folder) && isset($maint_status) && isset($maint_pages) && isset($banned_page)) {
       $table_name = $wpdb->prefix . 'maint';
@@ -56,7 +57,8 @@ class xen_mine
           'ban_url'   => $prod_img_folder,
           'maint'     => $maint_status,
           'ban_page'  =>$banned_page,
-          'maint_page'=> $maint_pages
+          'maint_page'=> $maint_pages,
+          'login_page'=>$login_pages,
         ),array('maint_id'=>1) );
 
       $maint = $wpdb->get_results( 'SELECT * FROM '.$wpdb->prefix.'maint WHERE maint_id = 1', OBJECT );
@@ -102,6 +104,7 @@ class xen_mine
     $maints     = $maint[0]->maint;
     $ban_page   = $maint[0]->ban_page;
     $maint_page = $maint[0]->maint_page;
+    $login_page = $maint[0]->login_page;
     foreach ( $member->subscriptions as $subscription ) {
       $membership = MS_Factory::load( 'MS_Model_Membership', $subscription->membership_id );
       // membership level matches the banned one
@@ -112,9 +115,9 @@ class xen_mine
         endif;
       }
       elseif ( $membership->id == $sid || $membership->id == $gid ) {
-        if (get_the_ID() != $maint_page) {
+        if (get_the_ID() != $maint_page && get_the_ID() != $login_page) {
           if ($maints == 'yes') {
-            if (get_the_ID() != $maint_page) {
+            if (get_the_ID() != 29761) {
               wp_redirect( $mid );
               exit;
             }
@@ -140,53 +143,53 @@ class xen_mine
       ),array('id'=>$id));
   }
 
-public function my_action($filename)
-{
-	
-
-  check_ajax_referer( 'my-special-string', 'security' );
-  if (check_ajax_referer( 'my-special-string', 'security' ) != NULL) {
+  public function my_action($filename)
+  {
 
 
-   
+    check_ajax_referer( 'my-special-string', 'security' );
+    if (check_ajax_referer( 'my-special-string', 'security' ) != NULL) {
 
-    if (file_exists($filename)) {
-      require($filename );
 
+
+
+      if (file_exists($filename)) {
+        require($filename );
+
+      }
+      else {
+        die( "The file $filename does not exist");
+      }
+
+      $user = filter_input(INPUT_POST, 'user');
+      $uuid = MojangAPI::getUuid($user);
+
+      echo "<div class='updated'> <p>
+      <strong>";
+
+
+      if (!empty($uuid)) {
+        echo  ("<dt>User id:</dt>
+          <dd>$uuid</dd>");
+
+        // Get his name history
+        $history = MojangAPI::getNameHistory($uuid);
+        echo  ('First username: <b>' . reset($history)['name'] . '</b><br>');
+
+        // Print player's head
+        $img = '<img src="' . MojangAPI::embedImage(MojangAPI::getPlayerHead($uuid)) . '" alt="Head of MTC">';
+        echo  ('Skin:<br>' . $img . '<br>');
+      }
+      else {
+        echo  ("User is not valid");
+      }
+
+      echo "</strong></p></div>";
     }
     else {
-      die( "The file $filename does not exist");
+      echo"<strong>Sorry but the security code is incorrect</strong>";
     }
-
-    $user = filter_input(INPUT_POST, 'user');
-    $uuid = MojangAPI::getUuid($user);
-
-    echo "<div class='updated'> <p>
-    <strong>";
-
-
-    if (!empty($uuid)) {
-      echo  ("<dt>User id:</dt>
-      <dd>$uuid</dd>");
-
-      // Get his name history
-      $history = MojangAPI::getNameHistory($uuid);
-      echo  ('First username: <b>' . reset($history)['name'] . '</b><br>');
-
-      // Print player's head
-      $img = '<img src="' . MojangAPI::embedImage(MojangAPI::getPlayerHead($uuid)) . '" alt="Head of MTC">';
-      echo  ('Skin:<br>' . $img . '<br>');
-    }
-    else {
-      echo  ("User is not valid");
-    }
-
-    echo "</strong></p></div>";
+    die(); // this is required to return a proper result
   }
-  else {
-    echo"<strong>Sorry but the security code is incorrect</strong>";
-  }
-  die(); // this is required to return a proper result
-}
 }
 ?>
