@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) or die( 'Idiot, this is a unauthorize access. Do it again a
 * Plugin Name:       Xensor Maintenance
 * Plugin URI:        http://www.pixelmonmemories.ml
 * Description:       This plugin allows you to enable maintenace, place banned members in a time out, set up rules and also verify minecraft accounts.
-* Version:           1.0.3
+* Version:           1.0.4
 * Author:            Xensor, ChuChuYokai
 * Author URI:        http://www.pixelmonmemories.ml
 * License:           GPL-2.0+
