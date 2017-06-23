@@ -73,6 +73,9 @@ on the membership 2 page, you will see a column with 'shortcode', you click the 
 
 You use `[showrules]` in any content that allows shortcodes and it will work. 
 
+*Sql File*
+
+I have included the sql file for download. Use these 2 files to install the tables into your database. Sorry, the plugin was not able to do it automatically for you. I included them so you would have the required tables.
 
 ## Screenshots ##
 
@@ -118,7 +121,7 @@ Added login page to be ignored from the redirect.
 
 ## Upgrade Notice ##
 
-## 1.0.4#
+# 1.0.4 #
 
 Login does not redirect to maintenance. It now allows visitors to login.
 
