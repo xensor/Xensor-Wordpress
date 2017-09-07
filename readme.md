@@ -146,3 +146,7 @@ This will show the proper labels so you know which membership is needed to show 
 
 Beta, Should not be used on a live site. This plugin has been created. We will post updates when we update the plugin.
 
+# 1.0.1 #
+
+Updated more features.
+
